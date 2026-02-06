@@ -68,6 +68,7 @@ export type ClientSearchPlatform =
     "dz" | "deezer" |
     "yandex" | "yandex music" | "yandexmusic" | "vk" | "vk music" | "vkmusic" | "tidal" | "tidal music" | "qobuz" |
     "pandora" | "pd" | "pandora music" | "pandoramusic" |
+    "amazonmusic" | "az" | "amazon" | "azsearch" |
     "flowerytts" | "flowery" | "flowery.tts" | LavalinkClientSearchPlatformResolve | LavalinkClientSearchPlatform | "js" | "jiosaavn" | "td" | "tidal" | "tdrec";
 
 export type SearchPlatform = LavalinkSearchPlatform | ClientSearchPlatform;
@@ -113,7 +114,8 @@ export type SourcesRegex = "YoutubeRegex" |
     "PandoraPlaylistRegex" |
     "AllPandoraRegex" |
     "TwitchTv" |
-    "vimeo";
+    "vimeo" |
+    "amazonMusic";
 
 export interface PlaylistInfo {
     /** The playlist name */
@@ -594,3 +596,4 @@ export type LavaSearchQuery = {
 };
 
 export type Awaitable<T> = Promise<T> | T
+
