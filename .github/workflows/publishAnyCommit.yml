@@ -4,7 +4,7 @@ on: [push, pull_request]
 jobs:
   publish:
     runs-on: ubuntu-latest
-    if: github.repository == 'Tomato6966/lavalink-client'
+    if: github.repository == 'bre4d777/lavalink-client'
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -20,3 +20,4 @@ jobs:
 
       - name: Publish
         run: bun --yes pkg-pr-new publish
+
