@@ -165,6 +165,9 @@ export const SourceLinksRegexes: Record<SourcesRegex, RegExp> = {
     /** From jiosaavn-plugin */
     jiosaavn: /(https?:\/\/)(www\.)?jiosaavn\.com\/(?<type>song|album|featured|artist)\/([a-zA-Z0-9-_/,]+)/,
 
+    /** From Amazon music */
+    amazonMusic: /https?:\/\/music\.amazon\.[a-z.]+\/(?:.*\/)?(track|album|playlist|user-playlists|artist)s?\/([a-z0-9]+)/i,
+
     /** From pandora */
     PandoraTrackRegex: /^@?(?:https?:\/\/)?(?:www\.)?pandora\.com\/artist\/[\w\-]+(?:\/[\w\-]+)*\/(?<identifier>TR[A-Za-z0-9]+)(?:[?#].*)?$/,
     PandoraAlbumRegex: /^@?(?:https?:\/\/)?(?:www\.)?pandora\.com\/artist\/[\w\-]+(?:\/[\w\-]+)*\/(?<identifier>AL[A-Za-z0-9]+)(?:[?#].*)?$/,
@@ -178,4 +181,5 @@ export const SourceLinksRegexes: Record<SourcesRegex, RegExp> = {
     musicYandex: /https:\/\/music\.yandex\.ru\//,
     radiohost: /https?:\/\/[^.\s]+\.radiohost\.de\/(\S+)/,
 }
+
 
