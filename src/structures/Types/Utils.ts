@@ -51,6 +51,7 @@ export type LavalinkSearchPlatform = "ytsearch" |
     "ytmsearch" |
     "scsearch" |
     "bcsearch" |
+    "azsearch' |
     LavaSrcSearchPlatform |
     DuncteSearchPlatform |
     JioSaavnSearchPlatform |
@@ -596,4 +597,5 @@ export type LavaSearchQuery = {
 };
 
 export type Awaitable<T> = Promise<T> | T
+
 
