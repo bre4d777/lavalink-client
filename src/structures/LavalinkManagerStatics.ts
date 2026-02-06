@@ -98,7 +98,12 @@ export const DefaultSources: Record<SearchPlatform, LavalinkSearchPlatform | Cli
     "jiosaavn": "jssearch",
     "js": "jssearch",
     "jssearch": "jssearch",
-    "jsrec": "jsrec"
+    "jsrec": "jsrec",
+    //amazon music 
+    "amazonmusic": "azsearch",
+    "amazon": "azsearch",
+    "az": "azsearch",
+    "azsearch": "azsearch"
 }
 
 /** Lavalink Plugins definiton */
@@ -173,3 +178,4 @@ export const SourceLinksRegexes: Record<SourcesRegex, RegExp> = {
     musicYandex: /https:\/\/music\.yandex\.ru\//,
     radiohost: /https?:\/\/[^.\s]+\.radiohost\.de\/(\S+)/,
 }
+
